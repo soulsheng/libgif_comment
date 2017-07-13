@@ -280,7 +280,7 @@ DGifGetScreenDesc(GifFileType *GifFile)
 	GifFreeMapObject(GifFile->SColorMap);
 	GifFile->SColorMap = NULL;
         return GIF_ERROR;
-    }ƒ
+    }
     GifFile->SColorResolution = (((Buf[0] & 0x70) + 1) >> 4) + 1;
     SortFlag = (Buf[0] & 0x08) != 0;
     BitsPerPixel = (Buf[0] & 0x07) + 1;
